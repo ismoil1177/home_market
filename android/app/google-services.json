@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "561734449423",
+    "firebase_url": "https://home-market-9a104-default-rtdb.firebaseio.com",
+    "project_id": "home-market-9a104",
+    "storage_bucket": "home-market-9a104.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:561734449423:android:39b88f285e56b25705e67a",
+        "android_client_info": {
+          "package_name": "com.example.home_market"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAo0KneuHmc6Vt3MTeyoFjAofj2iCQMtBA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

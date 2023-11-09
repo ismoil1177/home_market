@@ -1,0 +1,59 @@
+part of 'main_bloc.dart';
+
+abstract class MainState extends Equatable {
+  final List<Post> items;
+
+  const MainState(this.items);
+}
+
+class MainInitial extends MainState {
+  const MainInitial(super.items);
+
+  @override
+  List<Object> get props => [items];
+}
+
+class MainLoading extends MainState {
+  const MainLoading(super.items);
+
+  @override
+  List<Object> get props => [items];
+}
+
+class MainFailure extends MainState {
+  final String message;
+  const MainFailure(List<Post> items, this.message) : super(items);
+
+  @override
+  List<Object> get props => [message, items];
+}
+
+class FetchDataSuccess extends MainState {
+  final String message;
+
+  const FetchDataSuccess(super.items, this.message);
+
+  @override
+  List<Object> get props => [message, items];
+}
+
+class SearchMainSuccess extends MainState {
+  const SearchMainSuccess(super.items);
+
+  @override
+  List<Object> get props => [items];
+}
+
+class MyPostSuccess extends MainState {
+  const MyPostSuccess(super.items);
+
+  @override
+  List<Object> get props => [items];
+}
+
+class MyLikedSuccess extends MainState {
+  const MyLikedSuccess(super.items);
+
+  @override
+  List<Object> get props => [items];
+}
